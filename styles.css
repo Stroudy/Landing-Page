@@ -12,6 +12,15 @@ html {
     /* Makes the theme dark */
 }
 
+:root {
+    --gradient-color:
+        /* root for all gradient */
+        linear-gradient(45deg,
+            #12c2e9,
+            #c471ed,
+            #f64f59);
+}
+
 ul {
     list-style-type: none;
     /* Removes bullet points from list */
@@ -60,4 +69,69 @@ li a:hover {
 h1,
 h3 {
     text-align: center;
+}
+
+.text-1 {
+    color: #201844;
+}
+
+.wrapper {
+    max-width: 50rem;
+    margin-left: auto;
+    /* Center things */
+    margin-right: auto;
+    /* Center things */
+    padding-inline: 1rem;
+    /* Stops element thouching the edge of the page when scaling */
+}
+
+section {
+    padding-block: 5rem;
+    /* Logical property for top and bottom spacing  */
+}
+
+
+.diagonal-1 {
+    position: relative;
+    /* This helps the pseudo :: after element stays inside */
+    isolation: isolate;
+    /* Contains the z-index and prevent other background properties */
+}
+
+.diagonal-1::after {
+    content: '';
+    /* Because its a pseudo element we need a empty conent element   */
+    background-image:
+        /* background image to work with linear gradient, throw anything at it */
+        var(--gradient-color);
+    position: absolute;
+    /* Stops the pseudo element escaping the section */
+    z-index: -1;
+    /* Pushes element backwards */
+    inset: 0;
+    /* Inset is a Logical property, shorthand to top,bottom, left, right */
+    transform: skewY(-5deg);
+}
+
+
+.diagonal-2 {
+    position: relative;
+    /* This helps the pseudo :: after element stays inside */
+    isolation: isolate;
+    /* Contains the z-index and prevent other background properties */
+}
+
+.diagonal-2::after {
+    content: '';
+    /* Because its a pseudo element we need a empty conent element  */
+    background-image:
+        /* background image to work with linear gradient, throw anything at it */
+        var(--gradient-color);
+    position: absolute;
+    /* Stops the pseudo element escaping the section */
+    z-index: -1;
+    /* Pushes element backwards */
+    inset: 0;
+    /* Inset is a Logical property, shorthand to top,bottom, left, right */
+    transform: skewY(5deg);
 }
