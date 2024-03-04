@@ -12,6 +12,14 @@ html {
   /* Makes the theme dark */
 }
 
+body {
+  font-family: inter, sans-serif;
+  /* Use first font if not use backup */
+  margin: 0;
+  /* Removes browers default margin */
+  background-color: #033844;
+}
+
 :root {
   --gradient-color:
         /* root for all gradient */ linear-gradient(
@@ -69,6 +77,11 @@ li a:hover {
 h1,
 h3 {
   text-align: center;
+}
+
+h3 {
+  font-size: 12px;
+  margin-top: -20px;
 }
 
 .text-1 {
