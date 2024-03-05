@@ -56,9 +56,8 @@ li a {
 }
 
 li a:hover {
-  background-color: white;
+  background-image: var(--gradient-color);
   border-radius: 20px;
-  color: black;
 }
 
 #nav-bar {
@@ -147,4 +146,88 @@ section {
   inset: 0;
   /* Inset is a Logical property, shorthand to top,bottom, left, right */
   transform: skewY(5deg);
+}
+
+video {
+  display: block;
+  margin: auto;
+  width: 500px;
+  min-width: 300px;
+  overflow: hidden;
+  border: 10px solid;
+  border-image: var(--gradient-color);
+  border-image-slice: 1;
+}
+
+.container {
+  padding: 16px;
+  width: 50%;
+  border: 10px solid;
+  border-image: var(--gradient-color);
+  border-image-slice: 1; /* slices image into 9 sections, four corners, four edges and the middle.  */
+  margin: auto; /* "Set the margin property to auto. That way, the div will take up whatever width is specified in the CSS and the browser splits the remaining space equally between the margins on either side.*/
+  width: 50%;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 10px 0;
+  background: white;
+  color: gray;
+  border-radius: 5px;
+}
+
+.registerbtn {
+  background-image: var(--gradient-color);
+  border-radius: 10px;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 10;
+  color: blue;
+}
+
+label {
+  font-weight: 700;
+}
+
+hr {
+  width: 90%;
+  opacity: 20%;
+  margin-top: 50px;
+}
+
+p::first-letter {
+  font-size: 3rem;
+  float: left;
+  /* Makes the first large letter sink into the text instead of above it */
+  margin-right: 0.3rem;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 500px) {
+  /* When below 500px ul goes into grid */
+  ul {
+    display: grid;
+  }
+
+  #header-img {
+    display: none;
+  }
+
+  ul {
+    padding: 0;
+  }
+}
+
+form {
+  padding-bottom: 20px;
 }
