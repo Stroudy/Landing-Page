@@ -17,7 +17,7 @@
   <body>
     <header id="header">
       <nav id="nav-bar">
-        <img id="header-img" src="bbb.png" width="200px" />
+        <img id="header-img" src="bbb.png" />
 
         <ul>
           <li><a href="#top" class="nav-link">Top</a></li>
@@ -37,7 +37,7 @@
       <div class="wrapper">
         <div class="text-1">
           <h2 class="Top">Top</h2>
-          <p>
+          <p class="info">
             Big Buck Bunny (code-named Project Peach) is a 2008 animated comedy
             short film featuring animals of the forest, made by the Blender
             Institute, part of the Blender Foundation. Like the foundation's
@@ -54,7 +54,7 @@
     <section>
       <div class="wrapper">
         <h2 class="section-title" id="plot">Plot</h2>
-        <p>
+        <p class="info">
           The plot follows a day in the life of Big Buck Bunny, during which
           time he meets three bullying rodents: the leader, Frank the flying
           squirrel, and his sidekicks Rinky the red squirrel and Gimera the
@@ -81,7 +81,7 @@
       <div class="wrapper">
         <div class="text-1">
           <h2 class="section-title" id="production">Production</h2>
-          <p>
+          <p class="info">
             Following Elephants Dream (2006), Big Buck Bunny is the first
             project by the Blender Foundation to be created by the Blender
             Institute, a division of the foundation set up specifically to
@@ -106,7 +106,7 @@
     <section class="empty">
       <div class="wrapper">
         <h2 class="section-title" id="release">Release</h2>
-        <p>
+        <p class="info">
           The film was officially released in an April 10, 2008 premiere in
           Amsterdam while online movie downloads and files were released on May
           30, 2008. High-resolution, stereoscopic, high-frame-rate versions of
@@ -122,7 +122,7 @@
       <div class="wrapper">
         <div class="text-1">
           <h2 class="section-title" id="characters">Characters</h2>
-          <p>
+          <p class="info">
             The main character (called Big Buck Bunny) was also used in short
             films created by Renderfarm.fi: What is Renderfarm.fi? (2011)
             telling about the advantages of render farms and BBB loves CC (2012)
@@ -150,7 +150,7 @@
 
       <h1>Register for future updates</h1>
 
-      <div class="container">
+      <div class="reg">
         <label
           >First name
           <input
@@ -161,7 +161,11 @@
         /></label>
         <label
           >Surname
-          <input id="name" placeholder="Your surname" type="text" name="text"
+          <input
+            id="surname"
+            placeholder="Your surname"
+            type="text"
+            name="text"
         /></label>
         <label
           >Email
@@ -173,15 +177,26 @@
         /></label>
         <label
           >D.O.B
-          <input
-            id="email"
-            placeholder="Date of Birth"
-            type="date"
-            name="email"
+          <input id="DOB" placeholder="Date of Birth" type="date" name="email"
         /></label>
 
         <button type="submit" class="registerbtn">Register</button>
       </div>
     </form>
+    <footer>
+      <p class="footer-links">
+        <a href="#" class="footer-link">Home</a>
+        <a
+          href="https://en.wikipedia.org/wiki/Big_Buck_Bunny#External_links"
+          class="footer-link"
+          >Wiki</a
+        >
+        <a href="#" class="footer-link">Disclaimer</a>
+        <a href="https://peach.blender.org/" class="footer-link"
+          >Offical Website</a
+        >
+      </p>
+    </footer>
+    <p class="footer-name">Big Buck Bunny</p>
   </body>
 </html>

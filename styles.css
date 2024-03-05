@@ -70,6 +70,7 @@ li a:hover {
   width: 60px;
   margin-left: 5px;
   object-fit: cover;
+  margin-top: 5px;
   /* keeps object in aspect ratio  */
 }
 
@@ -159,14 +160,14 @@ video {
   border-image-slice: 1;
 }
 
-.container {
+.reg {
   padding: 16px;
   width: 50%;
   border: 10px solid;
   border-image: var(--gradient-color);
   border-image-slice: 1; /* slices image into 9 sections, four corners, four edges and the middle.  */
   margin: auto; /* "Set the margin property to auto. That way, the div will take up whatever width is specified in the CSS and the browser splits the remaining space equally between the margins on either side.*/
-  width: 50%;
+  width: 500px;
 }
 
 input {
@@ -205,7 +206,7 @@ hr {
   margin-top: 50px;
 }
 
-p::first-letter {
+p.info::first-letter {
   font-size: 3rem;
   float: left;
   /* Makes the first large letter sink into the text instead of above it */
@@ -230,4 +231,34 @@ p::first-letter {
 
 form {
   padding-bottom: 20px;
+}
+
+footer {
+  padding-block: 3rem;
+  background-color: #1b1c1d;
+  justify-content: center;
+  display: flex;
+  margin-bottom: -65px;
+}
+a.footer-link {
+  font-size: 18px;
+  padding: 10px;
+  color: azure;
+  text-decoration: none;
+}
+.footer-link:hover {
+  font-size: 18px;
+  padding: 10px;
+  color: rgb(39, 194, 194);
+  text-decoration: underline;
+}
+.footer-name {
+  background-color: #1b1c1d;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  font-size: 13px;
+  color: #39393a;
 }
