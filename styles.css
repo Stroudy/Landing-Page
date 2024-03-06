@@ -55,7 +55,7 @@ li a {
   /* Can give text underline */
 }
 
-li a:hover {
+header li a:hover {
   background-image: var(--gradient-color);
   border-radius: 20px;
 }
@@ -78,10 +78,13 @@ h1,
 h3 {
   text-align: center;
 }
-
+h1{
+  font-size: 70px;
+  
+}
 h3 {
-  font-size: 12px;
-  margin-top: -20px;
+  font-size: 20px;
+  margin-top: -40px;
 }
 
 .text-1 {
@@ -236,8 +239,9 @@ form {
 footer {
   padding-block: 3rem;
   background-color: #1b1c1d;
-  justify-content: center;
+  justify-content: space-between;
   display: flex;
+  flex: 1;
   margin-bottom: -65px;
 }
 a.footer-link {
@@ -256,9 +260,17 @@ a.footer-link {
   background-color: #1b1c1d;
   margin: 0;
   padding: 10px;
-  display: flex;
-  justify-content: center;
   padding-bottom: 20px;
   font-size: 13px;
   color: #39393a;
+  display: flex;
+  justify-content: center;
+}
+ul {
+  flex: 1;
+  display: flex;
+}
+.group-2 {
+  display: grid;
+  
 }
